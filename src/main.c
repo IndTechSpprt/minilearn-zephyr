@@ -4,6 +4,7 @@
 #include <zephyr/usb/usb_device.h>
 #include <zephyr/usb/usbd.h>
 #include <zephyr/drivers/uart.h>
+#include "matrix/matrix.h"
 
 // Create USB Device
 static const struct device *const dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_console));
@@ -25,12 +26,13 @@ int main (void) {
 		k_sleep(K_MSEC(100));
 	}
 
-	printk("Hello World! Finished Initializing!");
-	
-    while (1)
-    {
-		//Main code goes here
-		k_msleep(1000);
-    }
+	printk("Hello World! Finished Initializing!\n");
+
+	matrix test_matrix = make_matrix(2,2);
+
+	set_matrix(test_matrix,0,0,1.0);
+
+	print_matrix(test_matrix);
+
     return 0;
 }

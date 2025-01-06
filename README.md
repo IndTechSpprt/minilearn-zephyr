@@ -4,4 +4,6 @@ This repository contains an implementation of MiniLearn in the Zephyr framework,
 
 ## Repository Structure
 
+The `src` folder contains all the source code.
+
 ## Usage Instructions

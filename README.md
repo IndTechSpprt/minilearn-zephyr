@@ -8,4 +8,6 @@ The `src` folder contains all the source code.
 
 The `matrix` folder contains all matrix manipulation code
 
+> **Some `.h` files are large and should be excluded from linters!**
+
 ## Usage Instructions

@@ -15,4 +15,5 @@ src/network_defs/convolutional_layer.c
 src/network_defs/net.c
 src/utils/image.c
 src/utils/list.c
+src/utils/data.c
 )

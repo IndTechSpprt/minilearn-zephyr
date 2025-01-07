@@ -28,11 +28,5 @@ int main (void) {
 
 	printk("Hello World! Finished Initializing!\n");
 
-	matrix test_matrix = make_matrix(2,2);
-
-	set_matrix(test_matrix,0,0,1.0);
-
-	print_matrix(test_matrix);
-
     return 0;
 }
